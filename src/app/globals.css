@@ -17,11 +17,19 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  
+  color: #000000;
+  background: #EEEEEE;
+}
+
+.hero{
+  background-image: url("/img/hero.png");
+  background-size: cover;
+  height: 600px;
+}
+
+.cta{
+  background-image: url("/img/cta.jpg");
+  background-size: cover;
+  
 }
