@@ -21,7 +21,7 @@ const Product = ({product}) => {
     ];
 
   return (
-    <div className=' mt-10'>
+    <div className=' mt-10' id='product'>
         <div className=' flex flex-col px-6 gap-8 lg:px-14'>
             <div className=' flex flex-wrap text-[10px] font-medium gap-2'>
                 <a className=' border-2 border-gray-300 px-6 py-2 rounded-full hover:text-white hover:bg-black hover:border-black' href="">Chair</a>
@@ -41,11 +41,11 @@ const Product = ({product}) => {
                         </div>
 
                         <div className=' flex h-40 object-cover' >
-                            <Image className=' object-contain' src={product.img} alt="" />
+                            <Image className=' object-contain' src={product.img} alt="" width={500} height={500} />
                         </div>
                         <div className=' flex flex-row justify-between items-center'>
                             <div className=' flex flex-col'>
-                                <h1 className=' text-lg font-medium'>{product.name}</h1>
+                                <h1 className=' text-sm font-medium'>{product.name}</h1>
                                 <h2 className=' text-gray-600'>${product.price}</h2>
                             </div>
                             <Link href={`/ProductDetails?id=${product.id}&image=${encodeURIComponent(product.img)}&name=${encodeURIComponent(product.name)}&price=${product.price}`} passHref >

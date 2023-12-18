@@ -3,7 +3,7 @@ import { FiShoppingBag, FiMenu, FiX, FiChevronLeft, FiChevronRight} from 'react-
 import { FcGoogle } from "react-icons/fc";
 import { useState } from 'react'
 import { useCart } from '@/context/CartContext';
-import { MdDelete } from "react-icons/md";
+import { RiDeleteBinLine } from "react-icons/ri";
 
 const Navbar = () => {
     const {cart} = useCart();
@@ -29,9 +29,9 @@ const Navbar = () => {
         <div className=' flex flex-row justify-between items-center px-6 md:px-10 lg:px-16'>
             <h1 className=' text-sm font-extrabold lg:text-lg'>FURNI<span className=' text-[#609382]'>CO</span></h1>
             <div className=' hidden  text-xs gap-4 lg:text-sm md:flex'>
-                <a href="">Home</a>
-                <a href="">Products</a>
-                <a href="">Contact Us</a>
+                <a href="#hero">Home</a>
+                <a href="#product">Products</a>
+                <a href="#footer">Contact Us</a>
 
             </div>
             <div className=' flex flex-row justify-center items-center gap-4'>
@@ -39,7 +39,7 @@ const Navbar = () => {
                     <FiShoppingBag size={20}/>
                     <div className=' absolute ml-2 bg-red-700 rounded-full h-3 w-3 text-[8px] text-center text-white'>{cart.length}</div>
                 </div>
-                <h1 onClick={toogleLogin} className=' hidden md:flex bg-black rounded-full px-8 py-3 text-white text-sm font-semibold' href="">Sign Up</h1>
+                <h1 onClick={toogleLogin} className=' hidden md:flex bg-black rounded-full px-10 py-3 text-white text-sm font-semibold' href="">Sign Up</h1>
                 <div onClick={toogleNav} className=' md:hidden'>
                     {!nav ? <FiMenu size={20}/> : <FiX size={20}/> }
                 </div>
@@ -126,7 +126,7 @@ const Navbar = () => {
                             <div className=' flex flex-col gap-4'>
                                 <div className=' flex justify-between'>
                                     <div className=' flex flex-col gap-2'>
-                                        <h1 className=' text-xs font-bold w-32'>{product.name}</h1>
+                                        <h1 className=' text-xs font-semibold w-32'>{product.name}</h1>
                                         <select className=' w-14 text-[7px] bg-black text-white rounded-full px-2 py-1' name="Colors" id="">
                                             <option value="">Red</option>
                                             <option value="">Black</option>
@@ -134,7 +134,7 @@ const Navbar = () => {
                                         </select>
                                     </div>
                                     <div onClick={() => removeFromCart(index)}>
-                                        <MdDelete size={15}/>
+                                        <RiDeleteBinLine size={15}/>
                                     </div>
                                     
                                 </div>

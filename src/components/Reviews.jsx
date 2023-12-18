@@ -56,7 +56,7 @@ const Reviews = () => {
                                     <h2 className=' text-[8px]'>Costumer</h2>
                                 </div>
                             </div>
-                            <p className=' text-xs'>Dec.15,2023</p>
+                            <p className=' text-xs'>Date</p>
                             
                         </div>
                     </div>

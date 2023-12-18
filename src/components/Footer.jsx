@@ -3,7 +3,7 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedin, FaPinterest } from "re
 
 const Footer = () => {
   return (
-    <footer className=' p-6 mt-40 md:px-16'>
+    <footer className=' p-6 mt-20 md:px-16' id='footer'>
         <div className=' flex flex-col gap-4 md:flex-row md:justify-between'>
             <h1 className=' text-lg font-extrabold'>FURNI<span className=' text-[#609382]'>CO</span></h1>
 

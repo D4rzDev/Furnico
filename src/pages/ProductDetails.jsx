@@ -45,18 +45,18 @@ const Product = () => {
                 
                 <Loading/>
             ) : (
-                <div className=' flex flex-col gap-6 p-6'>
+                <div className=' flex flex-col gap-6 p-6 md:flex-row'>
                     <Link href='/'><FiArrowLeft size={20}/></Link>
                     
-                    <div className=' flex flex-col h-fit w-[100%] md:w-[48%] lg:w-[30%] bg-[#9FB4A7] rounded-lg p-4 gap-10'>
+                    <div className=' flex flex-col h-fit w-[100%] md:w-[90%] lg:w-[90%] bg-[#9FB4A7] rounded-lg p-4 gap-10'>
                         <div className=' flex flex-wrap text-[8px] font-medium gap-2'>
                             <a className=' border-2 border-gray-500 px-6 py-1 rounded-full' href="">Black</a>
                             <a className=' border-2 border-gray-500 px-6 py-1 rounded-full' href="">Blue</a>
                             <a className=' border-2 border-black text-white px-6 py-1 rounded-full bg-black' href="">Red</a>
                         </div>
 
-                        <div className=' flex h-40 object-cover' >
-                            <Image className=' object-contain' src={image} alt="" />
+                        <div className=' flex justify-center items-center ' >
+                            <Image className=' object-contain md:h-[200px] lg:h-[300px]' src={image} alt="" width={500} height={500} />
                         </div>
                         <div className=' flex flex-row justify-between items-center'>
                             <div className=' flex flex-col'>
@@ -76,9 +76,9 @@ const Product = () => {
                             <a className=' underline' href="">Reviews</a>
                         </div>
 
-                        <div className=' flex flex-col gap-2'>
+                        <div className=' flex flex-col gap-2 h-[600px] overflow-auto md:h-[350px] lg:h-[450px]'>
 
-                            <div className=' flex flex-row bg-[#9FB4A7] p-4 rounded-lg md:w-[60%]'>
+                            <div className=' flex flex-row bg-[#9FB4A7] p-4 rounded-lg md:w-full'>
                                 <div className=' flex flex-col gap-6 w-full'>
                                     <div className=' flex flex-row'>
                                         <FiStar fill='black' size={15}/>
@@ -103,7 +103,7 @@ const Product = () => {
                                 </div>
                             </div>
 
-                            <div className=' flex flex-row bg-[#9FB4A7] p-4 rounded-lg md:w-[60%]'>
+                            <div className=' flex flex-row bg-[#9FB4A7] p-4 rounded-lg md:w-full'>
                                 <div className=' flex flex-col gap-6 w-full'>
                                     <div className=' flex flex-row'>
                                         <FiStar fill='black' size={15}/>
@@ -128,7 +128,7 @@ const Product = () => {
                                 </div>
                             </div>
 
-                            <div className=' flex flex-row bg-[#9FB4A7] p-4 rounded-lg md:w-[60%]'>
+                            <div className=' flex flex-row bg-[#9FB4A7] p-4 rounded-lg md:w-full'>
                                 <div className=' flex flex-col gap-6 w-full'>
                                     <div className=' flex flex-row'>
                                         <FiStar fill='black' size={15}/>

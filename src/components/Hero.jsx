@@ -3,7 +3,7 @@ import { FiArrowRightCircle } from "react-icons/fi";
 
 const Hero = () => {
   return (
-    <div className=' hero flex items-center lg:h-screen'>
+    <div className=' hero flex items-center lg:h-screen' id='hero'>
         <div className=' flex flex-col px-6 text-white gap-14 md:px-10 lg:px-14 lg:gap-20'>
             <div className=' flex flex-col gap-4'>
                 <h1 className=' text-3xl font-bold w-[90%] md:text-5xl lg:text-6xl lg:w-[70%]'>Discover the Latest Furniture Trends and Styles</h1>
