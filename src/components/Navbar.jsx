@@ -4,6 +4,7 @@ import { FcGoogle } from "react-icons/fc";
 import { useState } from 'react'
 import { useCart } from '@/context/CartContext';
 import { RiDeleteBinLine } from "react-icons/ri";
+import Image from 'next/image';
 
 const Navbar = () => {
     const {cart} = useCart();
@@ -120,7 +121,7 @@ const Navbar = () => {
                         <div key={index} className='flex flex-row justify-between items-center w-full bg-[#609382] p-4 rounded-lg'>
                             <button className=' h-3 w-3 rounded-full border-2 border-black'></button>
                             <div className=' flex justify-center items-center w-24 h-20'>
-                                <img src={product.img} alt="" />
+                                <Image src={product.img} alt="" />
                             </div>
 
                             <div className=' flex flex-col gap-4'>
