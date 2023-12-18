@@ -4,7 +4,7 @@ import Hero from "@/components/Hero";
 import Product from "@/components/Product";
 import Reviews from "@/components/Reviews";
 import { CartProvider } from "@/context/CartContext";
-import { Main } from "next/document";
+
 
 const Home = ({children}) => {
   return (
