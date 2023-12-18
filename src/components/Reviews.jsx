@@ -20,7 +20,7 @@ const Reviews = () => {
                             <FiStar fill='black' size={15}/>
                             <FiStar  size={15}/>
                         </div>
-                        <p className=' text-xs'>Our experience with the company has been amazing. Their products are top-notch!</p>
+                        <p className=' text-xs'>Our experience with the company has been amazing. Their products are top-notch</p>
 
                         <div className=' flex flex-row justify-between items-center'>
                             <div className=' flex flex-row justify-center items-center gap-2'>
@@ -46,7 +46,7 @@ const Reviews = () => {
                             <FiStar fill='black' size={15}/>
                             <FiStar  size={15}/>
                         </div>
-                        <p className=' text-xs'>I highly recommend their furniture. It's stylish, durable, and affordable.</p>
+                        <p className=' text-xs'>I highly recommend their furniture. Its stylish, durable, and affordable.</p>
 
                         <div className=' flex flex-row justify-between items-center'>
                             <div className=' flex flex-row justify-center items-center gap-2'>
@@ -73,7 +73,7 @@ const Reviews = () => {
                             <FiStar fill='black' size={15}/>
                             <FiStar  size={15}/>
                         </div>
-                        <p className=' text-xs'>I highly recommend their furniture. It's stylish, durable, and affordable.</p>
+                        <p className=' text-xs'>I highly recommend their furniture. Its stylish, durable, and affordable.</p>
 
                         <div className=' flex flex-row justify-between items-center'>
                             <div className=' flex flex-row justify-center items-center gap-2'>
@@ -100,7 +100,7 @@ const Reviews = () => {
                             <FiStar fill='black' size={15}/>
                             <FiStar  size={15}/>
                         </div>
-                        <p className=' text-xs'>Our experience with the company has been amazing. Their products are top-notch!</p>
+                        <p className=' text-xs'>Our experience with the company has been amazing. Their products are top-notch</p>
 
                         <div className=' flex flex-row justify-between items-center'>
                             <div className=' flex flex-row justify-center items-center gap-2'>
