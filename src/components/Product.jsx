@@ -2,6 +2,7 @@ import React from 'react'
 import { FiArrowUpRight } from "react-icons/fi";
 import { useCart } from '@/context/CartContext';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Product = ({product}) => {
 
@@ -40,7 +41,7 @@ const Product = ({product}) => {
                         </div>
 
                         <div className=' flex h-40 object-cover' >
-                            <img className=' object-contain' src={product.img} alt="" />
+                            <Image className=' object-contain' src={product.img} alt="" />
                         </div>
                         <div className=' flex flex-row justify-between items-center'>
                             <div className=' flex flex-col'>

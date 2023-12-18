@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react'
 import Loading from '@/components/Loading'
 import { FiStar, FiPlus, FiArrowLeft} from 'react-icons/fi'
 import Link from 'next/link'
+import Image from 'next/image'
 
 
 const Product = () => {
@@ -55,7 +56,7 @@ const Product = () => {
                         </div>
 
                         <div className=' flex h-40 object-cover' >
-                            <img className=' object-contain' src={image} alt="" />
+                            <Image className=' object-contain' src={image} alt="" />
                         </div>
                         <div className=' flex flex-row justify-between items-center'>
                             <div className=' flex flex-col'>
